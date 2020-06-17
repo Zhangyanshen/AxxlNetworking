@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		238B6D87249A1C5E00981433 /* IdiomService.m in Sources */ = {isa = PBXBuildFile; fileRef = 238B6D83249A1C5E00981433 /* IdiomService.m */; };
+		238B6D88249A1C5E00981433 /* ModelService.m in Sources */ = {isa = PBXBuildFile; fileRef = 238B6D84249A1C5E00981433 /* ModelService.m */; };
+		238B6D91249A1D4000981433 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238B6D90249A1D4000981433 /* DownloadViewController.m */; };
+		238B6D94249A1EBE00981433 /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 238B6D93249A1EBE00981433 /* UploadViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		238B6D83249A1C5E00981433 /* IdiomService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdiomService.m; sourceTree = "<group>"; };
+		238B6D84249A1C5E00981433 /* ModelService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelService.m; sourceTree = "<group>"; };
+		238B6D85249A1C5E00981433 /* IdiomService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdiomService.h; sourceTree = "<group>"; };
+		238B6D86249A1C5E00981433 /* ModelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelService.h; sourceTree = "<group>"; };
+		238B6D8F249A1D4000981433 /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		238B6D90249A1D4000981433 /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		238B6D92249A1EBE00981433 /* UploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		238B6D93249A1EBE00981433 /* UploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
 		2CA888EC74AB0D8CE70806C0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		393830A2DF7F35FD4A504529 /* AxxlNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AxxlNetworking.podspec; path = ../AxxlNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		568FC68DA4D45D8B395735B2 /* Pods-AxxlNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxxlNetworking_Tests.release.xcconfig"; path = "Target Support Files/Pods-AxxlNetworking_Tests/Pods-AxxlNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +118,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		238B6D82249A1C5E00981433 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				238B6D85249A1C5E00981433 /* IdiomService.h */,
+				238B6D83249A1C5E00981433 /* IdiomService.m */,
+				238B6D86249A1C5E00981433 /* ModelService.h */,
+				238B6D84249A1C5E00981433 /* ModelService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +166,16 @@
 		6003F593195388D20070C39A /* Example for AxxlNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				238B6D82249A1C5E00981433 /* Service */,
 				6003F59C195388D20070C39A /* AXXLAppDelegate.h */,
 				6003F59D195388D20070C39A /* AXXLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* AXXLViewController.h */,
 				6003F5A6195388D20070C39A /* AXXLViewController.m */,
+				238B6D8F249A1D4000981433 /* DownloadViewController.h */,
+				238B6D90249A1D4000981433 /* DownloadViewController.m */,
+				238B6D92249A1EBE00981433 /* UploadViewController.h */,
+				238B6D93249A1EBE00981433 /* UploadViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -391,9 +419,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				238B6D94249A1EBE00981433 /* UploadViewController.m in Sources */,
+				238B6D87249A1C5E00981433 /* IdiomService.m in Sources */,
+				238B6D91249A1D4000981433 /* DownloadViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AXXLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* AXXLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				238B6D88249A1C5E00981433 /* ModelService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
