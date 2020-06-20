@@ -16,7 +16,6 @@
                     failure:(AxxlRequestCompletionBlock)failure
 {
     AxxlNetworkingRequest *request = [AxxlNetworkingRequest requestWithURL:URL params:params method:AxxlRequestMethodGET];
-//    request.requestTimeoutInterval = 0.1f;
     [request startWithSuccess:^(AxxlNetworkingRequest * _Nonnull request) {
         if (success) {
             success(request);
