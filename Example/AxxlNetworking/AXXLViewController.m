@@ -26,6 +26,7 @@
 	AxxlNetworkingConfig *config = [AxxlNetworkingConfig sharedConfig];
     config.baseURL = @"http://route.showapi.com";
     config.sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    config.requestHeaderFieldValueDictionary = @{};
     config.systemParams = @{
         @"showapi_appid": @"262914",
         @"showapi_sign": @"f7d1ccab38d34fdb9f1753cb1b7da44b"

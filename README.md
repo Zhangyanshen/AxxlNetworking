@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+iOS 9.0 +
+
 ## Installation
 
 AxxlNetworking is available through [CocoaPods](https://cocoapods.org). To install
@@ -23,9 +25,16 @@ pod 'AxxlNetworking'
 ## 结构
 
 - `AxxlNetworkingConfig`
+    * 通用配置类，可以配置域名、HTTPS认证方式、请求头以及通用参数等。
+
 - `AxxlNetworkingRequest`
+    * 网络请求类，使用该类发起网络请求，封装了请求的URL、参数、HTTP请求方式、序列化等。
+
 - `AxxlNetworkingAgent`
+    * 真正发送网络请求的类，封装了AFNetworking的常用方法。
+
 - `AxxlNetworkingUtil`
+    * 网络请求工具类，封装了网络请求需要的一些工具。
 
 ## 使用
 
@@ -77,6 +86,25 @@ AxxlNetworkingRequest *request = [[AxxlNetworkingRequest alloc] initWithURL:url 
 } failure:^(AxxlNetworkingRequest * _Nonnull request) {
     // 失败的回调
 }];
+```
+
+#### 通用配置
+
+```objective-c
+AxxlNetworkingConfig *config = [AxxlNetworkingConfig sharedConfig];
+// 配置域名
+config.baseURL = @"http://route.showapi.com";
+// 配置NSURLSession Configuration
+config.sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+// 配置HTTP请求头
+config.requestHeaderFieldValueDictionary = @{};
+// 配置所有接口都需要的参数
+config.systemParams = @{
+    @"showapi_appid": @"262914",
+    @"showapi_sign": @"f7d1ccab38d34fdb9f1753cb1b7da44b"
+};
+// 是否开启log
+config.debugLogEnabled = YES;
 ```
 
 ## Author
