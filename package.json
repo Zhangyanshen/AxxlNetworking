@@ -1,0 +1,29 @@
+{
+  "name": "axxlnetworking",
+  "version": "1.0.0",
+  "description": "[![CI Status](https://img.shields.io/travis/张延深/AxxlNetworking.svg?style=flat)](https://travis-ci.org/张延深/AxxlNetworking) [![Version](https://img.shields.io/cocoapods/v/AxxlNetworking.svg?style=flat)](https://cocoapods.org/pods/AxxlNetworking) [![License](https://img.shields.io/cocoapods/l/AxxlNetworking.svg?style=flat)](https://cocoapods.org/pods/AxxlNetworking) [![Platform](https://img.shields.io/cocoapods/p/AxxlNetworking.svg?style=flat)](https://cocoapods.org/pods/AxxlNetworking)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhangyanshen/AxxlNetworking.git"
+  },
+  "author": "张延深",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhangyanshen/AxxlNetworking/issues"
+  },
+  "homepage": "https://github.com/Zhangyanshen/AxxlNetworking#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
